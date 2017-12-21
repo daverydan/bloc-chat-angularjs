@@ -1,1 +1,8 @@
-<h1>Home Page</h1>
+<aside class="room-list">
+  <h1 class="room-list-title">Bloc Chat</h1>
+  <ul class="list-unstyled">
+    <li class="room-list-item" ng-repeat="room in home.roomList.all">
+      <a href="#">{{ room.$value }}</a>
+    </li>
+  </ul>
+</aside>
