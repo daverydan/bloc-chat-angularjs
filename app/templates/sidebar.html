@@ -1,8 +1,11 @@
 <aside class="room-list">
   <h1 class="room-list-title">Bloc Chat</h1>
+
+  <button type="button" class="btn btn-default add-room-btn" ng-click="home.open()">+ Add Room</button>
+
   <ul class="list-unstyled">
     <li class="room-list-item" ng-repeat="room in home.roomList.all">
-      <a href="#">{{ room.$value }}</a>
+      <a href="#">{{ room.room }}</a><!-- room.$value before -->
     </li>
   </ul>
 </aside>

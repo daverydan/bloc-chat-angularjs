@@ -1,0 +1,16 @@
+<div class="modal-demo">
+  <form ng-submit="modal.addRoom(newRoom)">
+    <div class="modal-header">
+      <h3 class="modal-title" id="modal-title">Room Name</h3>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <div class="form-group" style="margin-bottom: 0;">
+          <input type="text" class="form-control" ng-model="newRoom">
+        </div>
+    </div>
+    <div class="modal-footer">
+      <input type="submit" value="OK" class="btn btn-primary">
+      <button class="btn btn-warning" type="button" ng-click="modal.cancel()">Cancel</button>
+    </div>
+  </form>
+</div>
