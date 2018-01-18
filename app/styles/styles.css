@@ -12,6 +12,7 @@
 .room-list {
   background: #ccc;
   color: #333;
+  float: left;
   height: 100vh;
   width: 25%;
 }
@@ -31,4 +32,38 @@
 .room-list-item a:hover {
   background: #aaa;
   color: #333;
+}
+
+.active {
+	background: #aaa;
+  color: #333;	
+}
+
+/* message.html ================================================== */
+
+.room-board {
+  float: left;
+  width: 75%;
+}
+
+.room-board__title {
+  margin: 0;
+  padding: 30px;
+  text-transform: capitalize;
+}
+
+.room-board__msg {
+	padding: 15px 30px;
+}
+
+.room-board__msg p {
+	margin: 0;
+}
+
+.room-board__msg p:first-child {
+	margin-bottom: 10px;
+} 
+
+.room-board__msg:nth-of-type(odd) {
+	background: #eee;
 }

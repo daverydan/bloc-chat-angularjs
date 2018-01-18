@@ -5,7 +5,8 @@
 
   <ul class="list-unstyled">
     <li class="room-list-item" ng-repeat="room in home.roomList.all">
-      <a href="#">{{ room.room }}</a><!-- room.$value before -->
+      <a href="" ng-click="home.messageList.getByRoomId(room.$id); home.roomList.setRoomName(room.room); home.roomList.clicked(room)" ng-class="{active: isActive(room)}">{{ room.room }}</a>
     </li>
   </ul>
+
 </aside>

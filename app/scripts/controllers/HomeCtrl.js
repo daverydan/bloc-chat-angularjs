@@ -1,10 +1,16 @@
 (function() {
-  function HomeCtrl(Room, $uibModal) {
+  function HomeCtrl(Room, $uibModal, Message) {
     /**
     * @desc Stores Room service
     * @type {Object}
     */
     this.roomList = Room;
+
+		/**
+    * @desc Stores Message service
+    * @type {Object}
+    */
+    this.messageList = Message;
 
     /**
     * @func open
@@ -21,5 +27,5 @@
 
   angular
     .module('blocChat')
-    .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
+    .controller('HomeCtrl', ['Room', '$uibModal', 'Message', HomeCtrl]);
 })();

@@ -1,0 +1,10 @@
+<div class="room-board">
+  <h3 class="room-board__title">{{ home.roomList.roomTitle }}</h3>
+
+  <ul class="list-unstyled">
+    <li class="room-board__msg" ng-repeat="msg in home.messageList.all">
+      <p><strong>{{ msg.username }}</strong> <span style="color: #aaa; float: right;"><em>{{ msg.sentAt }}</em></span></p>
+      <p>{{ msg.content }}</p>
+    </li>
+  </ul>
+</div>
